@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <a className="btn normal-case text-xl">Logo</a>
+        <Link href="/" className="btn normal-case text-xl">Logo</Link>
       </div>
       <div className="navbar-end">
         <div className="hidden md:flex">
@@ -24,7 +25,7 @@ const Navbar = () => {
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <a className="btn btn-primary normal-case">Sign Up</a>
+        <Link href="/signup" className="btn btn-primary normal-case">Sign Up</Link>
       </div>
     </nav>
   )
