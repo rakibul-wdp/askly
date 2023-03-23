@@ -29,11 +29,11 @@ const Address = () => {
         </div>
         <div className='flex items-center p-3.5 rounded-lg my-4' style={{ background: "rgba(253, 253, 253, 0.4)" }}>
           <Image src={PhoneNumberImg} width={20} height={20} alt='phone number' />
-          <span>Phone Number</span>
+          <span className='text-xl font-bold ml-4'>Phone Number</span>
         </div>
         <div className='flex items-center p-3.5 rounded-lg' style={{ background: "rgba(253, 253, 253, 0.4)" }}>
           <Image src={EmailImg} width={20} height={20} alt='email' />
-          <span>Email</span>
+          <span className='text-xl font-bold ml-4'>Email</span>
         </div>
         <h4 className='text-xl font-bold my-3'>Want to talk to us?</h4>
         <form>
