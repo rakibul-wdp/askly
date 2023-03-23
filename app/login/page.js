@@ -16,7 +16,7 @@ const Login = () => {
       <Navbar />
       <form onSubmit={handleLoginSubmit} className='absolute bottom-1/2 right-1/2 transform translate-x-1/2 translate-y-1/2 bg-accent p-5 rounded-lg w-[25%]'>
         <h2 className='text-xl font-bold mb-3'>Welcome back</h2>
-        <input type="text" placeholder="Type here" className="input input-bordered w-full mb-5" />
+        <input type="email" placeholder="Type here" className="input input-bordered w-full mb-5" />
         <input type="password" placeholder="Type here" className="input input-bordered w-full" />
         <p className='my-3'>Forget your password?</p>
         <input className='btn btn-primary normal-case w-full mb-3' type="submit" value="Login" />
