@@ -14,8 +14,10 @@ const SignUp = () => {
       background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.2) 10.8%, rgba(255, 127, 127, 0.2) 88.78%)`,
     }}>
       <Navbar />
-      <form onSubmit={handleLoginSubmit} className='absolute bottom-1/2 right-1/2 transform translate-x-1/2 translate-y-1/2 bg-accent p-5 rounded-lg w-[25%]'>
-        <h4 className='text-xl mb-3'>Get more out of your files with our search tool – sign up today</h4>
+      <form onSubmit={handleLoginSubmit} className='absolute bottom-1/2 right-1/2 transform translate-x-1/2 translate-y-1/2 bg-accent p-5 rounded-lg w-[90%] sm:w-[70%] md:w-[50%] lg:w-[45%] xl:w-[40%] 2xl:w-[30%]' style={{
+        background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.1) 10.8%, rgba(255, 127, 127, 0.1) 88.78%)`,
+      }}>
+        <h4 className='text-2xl mb-3'>Get more out of your files with our search tool – sign up today</h4>
         <div className='flex items-center justify-center'>
           <input type="text" placeholder="First name" className="input input-bordered w-full mb-5 mr-1" />
           <input type="text" placeholder="Last name" className="input input-bordered w-full mb-5 ml-1" />
@@ -34,9 +36,8 @@ const SignUp = () => {
           <input type="checkbox" checked="checked" className="checkbox checkbox-success checkbox-xs" />
         </div></div>
         <input type="text" placeholder="Referral code" className="input input-bordered w-full mb-5" />
-        <p className='my-3'>Forget your password?</p>
         <input className='btn btn-primary normal-case w-full mb-3' type="submit" value="Sign Up" />
-        <p>Already have an account? <Link href="/login">Login</Link></p>
+        <p>Already have an account? <Link className='underline' href="/login">Login</Link></p>
       </form>
     </section>
   )
