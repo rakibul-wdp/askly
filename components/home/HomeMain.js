@@ -28,3 +28,12 @@ const HomeMain = () => {
 }
 
 export default HomeMain;
+
+// home main section need to add animation
+// 1st sub section will go left to right
+// 2nd sub section will go right to left
+// 3rd sub section will go bottom to up
+// possible library data fase iso
+
+// responsive is not done
+// small device need to be responsive as figma
