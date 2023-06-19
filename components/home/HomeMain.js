@@ -4,7 +4,7 @@ import React from 'react'
 
 const HomeMain = () => {
   return (
-    <div className='bg-[#F2E3EF] py-10'>
+    <div className='bg-[#F2E3EF] pt-10 pb-32'>
       {
         homeMain.map((item) => (
           <div key={item.id} className={`flex ${item.id === 2 && "flex-row-reverse my-24"} items-center justify-center gap-32 relative`}>
