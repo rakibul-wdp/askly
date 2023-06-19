@@ -14,7 +14,7 @@ const Login = () => {
       background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.2) 10.8%, rgba(255, 127, 127, 0.2) 88.78%)`,
     }}>
       <Navbar />
-      <form onSubmit={handleLoginSubmit} className='absolute bottom-1/2 right-1/2 transform translate-x-1/2 translate-y-1/2 bg-accent p-5 rounded-lg'>
+      <form onSubmit={handleLoginSubmit} className='absolute bottom-1/2 right-1/2 transform translate-x-1/2 translate-y-1/2 bg-accent p-5 rounded-lg w-[25%]'>
         <h2 className='text-xl font-bold mb-3'>Welcome back</h2>
         <input type="text" placeholder="Type here" className="input input-bordered w-full mb-5" />
         <input type="password" placeholder="Type here" className="input input-bordered w-full" />
