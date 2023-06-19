@@ -4,9 +4,11 @@ import HomeMain from '@/components/home/HomeMain';
 
 export default function Home() {
   return (
-    <main className='relative'>
-      <Navbar />
-      <HomeHero />
+    <main>
+      <div className='relative'>
+        <Navbar />
+        <HomeHero />
+      </div>
       <HomeMain />
     </main>
   )
