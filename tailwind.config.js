@@ -14,5 +14,18 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: [
+      {
+        asklytheme: {
+          "primary": "#8421C0",
+          "secondary": "#000000",
+          "accent": "#FDFDFD",
+          "neutral": "#6D6D6D",
+          "base-100": "#ffffff"
+        },
+      },
+    ],
+  },
+  plugins: [require("daisyui")],
 }
