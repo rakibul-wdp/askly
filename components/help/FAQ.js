@@ -9,9 +9,7 @@ import { FAQHelp } from '@/mockData/FAQHelp';
 
 const FAQ = () => {
   return (
-    <section className='h-[80vh]' style={{
-      background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.2) 10.8%, rgba(255, 127, 127, 0.2) 88.78%)`,
-    }}>
+    <section className='h-[80vh]'>
       <Navbar />
       <div className='pt-32'>
         <h2 className='text-3xl font-bold text-center'>Frequently Asked Questions</h2>
