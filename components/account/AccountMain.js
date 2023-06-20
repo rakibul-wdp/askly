@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Tab } from '@headlessui/react'
 import AccountBody from './AccountBody';
 import AccountEditSubscription from './AccountEditSubscription';
@@ -33,6 +33,8 @@ const AccountMain = () => {
     return classes.filter(Boolean).join(' ')
   }
 
+  const changePassword = Object.keys(categories).map((category) => category);
+
   return (
     <div className="w-full lg:px-24 py-16 sm:px-0">
       <Tab.Group as="div" className="flex justify-between">
@@ -56,7 +58,7 @@ const AccountMain = () => {
             ))}
           </div>
           <div>
-            <Tab
+            {changePassword[0] === "Account" && <Tab
               className={({ selected }) =>
                 classNames(
                   'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
@@ -69,6 +71,7 @@ const AccountMain = () => {
             >
               Change Password
             </Tab>
+            }
             <Tab
               className={({ selected }) =>
                 classNames(
