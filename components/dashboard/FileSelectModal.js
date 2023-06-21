@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import CrossImg from "../../public/assets/images/dashboard/cross.svg";
+import CrossImg from "../../public/assets/images/common/cross.svg";
 import Image from 'next/image';
 import { dashboardDocuments } from '@/mockData/dashboardDocuments';
 import FileImg from "../../public/assets/images/dashboard/file.svg";
