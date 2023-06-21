@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="flex lg:items-center justify-between pt-2 pb-10 bg-accent max-w-screen-2xl mx-auto px-3 sm:px-5 md:px-8 lg:px-14 xl:px-20 2xl:px-24">
       <div className="flex flex-col xl:flex-row xl:items-center">
-        <Image src={AsklyLogo} width={250} height={250} lang='askly logo' />
+        <Image src={AsklyLogo} width={250} height={250} alt='askly logo' />
         <p className='text-xl font-medium mt-2 md:mt-0'>Copyright © 2023 - All right reserved</p>
       </div>
       <div className="flex flex-col lg:flex-row lg:items-center text-xl">
