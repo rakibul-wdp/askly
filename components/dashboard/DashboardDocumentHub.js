@@ -6,7 +6,7 @@ import Image from 'next/image';
 const DashboardDocumentHub = () => {
   return (
     <section>
-      <div className='text-center md:text-end my-14 mr-10'>
+      <div className='text-center md:text-end my-14 md:mr-10'>
         <button className='btn btn-outline normal-case w-[10rem] md:btn-wide border-dashed'>Drag your files here</button>
         <button className='btn btn-primary normal-case w-[10rem] md:btn-wide mx-3'>Upload</button>
         <button className='btn normal-case bg-base-100 px-10'>Delete</button>

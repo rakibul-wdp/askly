@@ -17,7 +17,7 @@ const DashboardAsk = () => {
   return (
     <>
       {!session ? <section>
-        <div className='text-center md:text-end my-14 mr-10'>
+        <div className='text-center md:text-end my-14 md:mr-10'>
           <button onClick={() => setSession(true)} className='btn btn-primary normal-case btn-outline w-[10rem] md:btn-wide'>Saved Session</button>
           <button onClick={openModal} className='btn btn-primary normal-case w-[10rem] md:btn-wide ml-5'>Select Files</button>
         </div>

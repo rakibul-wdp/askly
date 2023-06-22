@@ -39,11 +39,11 @@ const FileSelectModal = ({ isOpen, closeModal }) => {
                 >
                   <h3>My Documents</h3>
                   <div className='flex items-center'>
-                    <button className='btn btn-primary'>Done</button>
+                    <button className='btn btn-primary normal-case w-[7rem] mr-5 hidden sm:block'>Done</button>
                     <Image onClick={closeModal} className='cursor-pointer' src={CrossImg} width={30} height={30} alt='cross icon' />
                   </div>
                 </Dialog.Title>
-                <div className='grid grid-cols-6 gap-5 w-full mt-2'>
+                <div className='text-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-5 md:gap-10 mt-2'>
                   {
                     dashboardDocuments.map((document) => (
                       <div className='flex justify-center' key={document.id}>
@@ -56,6 +56,7 @@ const FileSelectModal = ({ isOpen, closeModal }) => {
                     ))
                   }
                 </div>
+                <button className='btn btn-primary normal-case btn-wide mt-10 sm:hidden mx-[20%]'>Done</button>
               </Dialog.Panel>
             </Transition.Child>
           </div>
