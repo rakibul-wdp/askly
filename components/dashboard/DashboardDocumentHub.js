@@ -6,17 +6,17 @@ import Image from 'next/image';
 const DashboardDocumentHub = () => {
   return (
     <section>
-      <div className='text-end my-14 mr-10'>
-        <button className='btn btn-outline border-dashed'>Drag your files here</button>
-        <button className='btn btn-primary normal-case mx-3'>Upload</button>
-        <button className='btn bg-base-100'>Delete</button>
+      <div className='text-center md:text-end my-14 mr-10'>
+        <button className='btn btn-outline normal-case w-[10rem] md:btn-wide border-dashed'>Drag your files here</button>
+        <button className='btn btn-primary normal-case w-[10rem] md:btn-wide mx-3'>Upload</button>
+        <button className='btn normal-case bg-base-100 px-10'>Delete</button>
       </div>
-      <h4 className='text-xl text-primary font-medium mb-14'>My Documents</h4>
-      <div className='grid grid-cols-6 w-[80%]'>
+      <h4 className='text-xl text-primary font-medium mb-14 px-3 sm:px-5 md:px-8'>My Documents</h4>
+      <div className='text-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-5 md:gap-10 px-3 sm:px-5 md:px-8'>
         {
           dashboardDocuments.map((document) => (
             <div className='flex justify-center' key={document.id}>
-              <input type="checkbox" checked={`${document.checked ? "checked" : ""}`} className="checkbox checkbox-primary -mt-6 mr-5" />
+              <input type="checkbox" defaultChecked={`${document.checked ? "checked" : ""}`} className="checkbox checkbox-primary -mt-6 mr-5" />
               <div>
                 <Image src={FileImg} width={100} height={100} alt='file' />
                 <h5>{document.filetTitle}</h5>

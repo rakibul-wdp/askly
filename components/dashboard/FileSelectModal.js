@@ -34,10 +34,10 @@ const FileSelectModal = ({ isOpen, closeModal }) => {
             >
               <Dialog.Panel className="w-full max-w-5xl h-[70vh] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                 <Dialog.Title
-                  as="h3"
+                  as="h4"
                   className="text-lg font-medium leading-6 text-gray-900 flex items-center justify-between mb-14"
                 >
-                  <h4>My Documents</h4>
+                  <h3>My Documents</h3>
                   <div className='flex items-center'>
                     <button className='btn btn-primary'>Done</button>
                     <Image onClick={closeModal} className='cursor-pointer' src={CrossImg} width={30} height={30} alt='cross icon' />
@@ -47,7 +47,7 @@ const FileSelectModal = ({ isOpen, closeModal }) => {
                   {
                     dashboardDocuments.map((document) => (
                       <div className='flex justify-center' key={document.id}>
-                        <input type="checkbox" checked={`${document.checked ? "checked" : ""}`} className="checkbox checkbox-primary -mt-6 mr-5" />
+                        <input type="checkbox" defaultChecked={`${document.checked ? "checked" : ""}`} className="checkbox checkbox-primary -mt-6 mr-5" />
                         <div>
                           <Image src={FileImg} width={100} height={100} alt='file' />
                           <h5>{document.filetTitle}</h5>

@@ -77,7 +77,7 @@ const AccountMain = () => {
             <Tab.Panel
               key={idx}
               className={classNames(
-                'rounded-r-xl p-3 h-[72vh]',
+                'rounded-r-xl p-3 lg:h-[72vh]',
               )}
               style={{
                 background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.04) 10.8%, rgba(255, 127, 127, 0.04) 88.78%)`,
@@ -91,7 +91,7 @@ const AccountMain = () => {
             </Tab.Panel>
           ))}
         </Tab.Panels>
-        <div className='lg:hidden flex items-center justify-around flex-col sm:flex-row w-[14rem] md:w-[14rem]'>
+        <div className='lg:hidden flex items-center justify-around flex-col sm:flex-row w-[14rem] md:w-[14rem] mx-auto'>
           <button className='btn btn-primary btn-outline normal-case w-full'>Change Password</button>
           <button className='btn btn-primary btn-outline normal-case w-full'>Delete Account</button>
         </div>
