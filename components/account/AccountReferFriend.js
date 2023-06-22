@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const AccountReferFriend = () => {
   return (
-    <section className='w-[50%] mx-auto text-center py-5'>
+    <section className='w-[90%] sm:w-[80%] md:w-[70%] lg:w-[50%] mx-auto text-center py-5'>
       <Image className='inline border rounded-lg' src={RewardsImg} width={400} height={400} alt='rewards' />
       <h4 className='text-xl font-bold my-3'>Spread the Word and Earn Rewards</h4>
       <p className='text-sm font-medium w-[85%] mx-auto'>Get the most out of Askly by sharing it with your friends! Use your unique referral code or invite them directly by email and earn rewards for every new user that signs up.</p>
