@@ -8,8 +8,10 @@ const Account = () => {
     <div style={{
       background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.2) 10.8%, rgba(255, 127, 127, 0.2) 88.78%)`,
     }}>
-      <AccountNav />
-      <AccountMain />
+      <div className='max-w-screen-2xl mx-auto'>
+        <AccountNav />
+        <AccountMain />
+      </div>
       <Footer />
     </div>
   )
