@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 const AccountEditSubscription = () => {
   return (
-    <section className='flex justify-between p-5'>
-      <div className='border p-5 rounded-lg'>
-        <button className='btn btn-primary'>Current plan</button>
+    <section className='flex flex-col md:flex-row justify-between p-5'>
+      <div className='border border-white p-5 rounded-lg w-[80%] sm:w-[60%] md:w-[35%] mx-auto md:mx-0'>
+        <p className='text-end bg-primary text-white ml-[60%] px-5 py-2 rounded-2xl -mt-5 -mr-5'>Current plan</p>
         <h2 className='text-3xl font-bold'>Starter</h2>
         <div className="divider"></div>
         <ul className="list-disc list-outside ml-8 font-medium">
@@ -19,10 +19,10 @@ const AccountEditSubscription = () => {
           <li>Automated Updated Features</li>
           <li>24/7 Life time Support</li>
         </ul>
-        <button className='mt-32 btn'>Cancel</button>
+        <button className='mt-32 btn mx-auto flex items-center'>Cancel</button>
       </div>
-      <Image src={BigArrowImg} width={50} height={50} alt='starter to advance arrow' />
-      <div className='border p-5 rounded-lg'>
+      <Image className='mx-auto my-10 md:my-0 rotate-90 md:-rotate-0' src={BigArrowImg} width={50} height={50} alt='starter to advance arrow' />
+      <div className='border border-white p-5 rounded-lg w-[80%] sm:w-[60%] md:w-[35%] mx-auto md:mx-0'>
         <h2 className='text-3xl font-bold'>Advanced</h2>
         <div className="divider"></div>
         <ul className="list-disc list-outside ml-8 font-medium">
@@ -35,9 +35,9 @@ const AccountEditSubscription = () => {
           <li>Automated Updated Features</li>
           <li>24/7 Life time Support</li>
         </ul>
-        <button className='mt-32 btn btn-primary btn-outline'>Upgrade now</button>
+        <button className='mt-32 btn btn-primary btn-outline normal-case w-full'>Upgrade now</button>
       </div>
-      <button className='btn btn-primary btn-outline'>More plans &gt;</button>
+      <button className='btn btn-primary btn-outline normal-case mx-auto'>More plans &gt;</button>
     </section>
   )
 }

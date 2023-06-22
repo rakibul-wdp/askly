@@ -91,6 +91,10 @@ const AccountMain = () => {
             </Tab.Panel>
           ))}
         </Tab.Panels>
+        <div className='lg:hidden flex items-center justify-around flex-col sm:flex-row w-[14rem] md:w-[14rem]'>
+          <button className='btn btn-primary btn-outline normal-case w-full'>Change Password</button>
+          <button className='btn btn-primary btn-outline normal-case w-full'>Delete Account</button>
+        </div>
       </Tab.Group>
     </div>
   )
