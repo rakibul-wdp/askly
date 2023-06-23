@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Tab } from '@headlessui/react'
 import AsklyLogo from "../../public/assets/images/common/asklyLogo.png";
 import UserIcon from "../../public/assets/icons/User.svg";
@@ -39,6 +39,7 @@ const categories = [
 ]
 
 const DashboardSideNav = () => {
+  const [active, setActive] = useState("");
 
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -53,22 +54,27 @@ const DashboardSideNav = () => {
         <Tab.List className="flex flex-col justify-between w-full lg:w-[18%] lg:h-screen space-x-1 bg-[#FCEDF0] p-1 px-10 lg:px-3 xl:px-5 2xl:px-10">
           <div className='flex lg:flex-col px-4 sm:px-14 md:px-32 lg:px-0'>
             <Image className='lg:my-10 hidden lg:block' src={AsklyLogo} width={250} height={250} alt='askly logo' />
-            {Object.keys(categories).map((category) => (
-              <Tab
-                key={category}
-                className={({ selected }) =>
-                  classNames(
-                    'w-full py-2.5 font-medium leading-5',
-                    'lg:text-start',
-                    selected
-                      ? 'text-primary'
-                      : 'hover:text-primary'
-                  )
-                }
-              >
-                {category}
-              </Tab>
-            ))}
+            {
+              categories.map((category) => (
+                <Tab
+                  key={category.id}
+                  className={({ selected }) =>
+                    classNames(
+                      'w-full py-2.5 font-medium leading-5',
+                      'lg:text-start',
+                      selected
+                        ? `${setActive(category.navTitle)} text-primary`
+                        : 'hover:text-primary'
+                    )
+                  }
+                >
+                  <div className='flex items-center justify-start gap-1'>
+                    {<Image src={active === category.navTitle ? category.activeIcon : category.icon} width={20} height={20} alt='icon' />}
+                    {category.navTitle}
+                  </div>
+                </Tab>
+              ))
+            }
           </div>
           <div className='hidden lg:block -ml-20'>
             <Tab className="btn btn-primary btn-outline normal-case w-[12rem] lg:w-[10rem] xl:w-[12rem] 2xl:ml-3 mb-2">Account management</Tab>
@@ -76,23 +82,21 @@ const DashboardSideNav = () => {
           </div>
         </Tab.List>
         <Tab.Panels className="w-full">
-          {Object.values(categories).map((posts, idx) => (
-            <Tab.Panel
-              key={idx}
-              className={classNames(
-                'rounded-r-xl p-3 lg:h-screen',
-              )}
-              style={{
-                background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.04) 10.8%, rgba(255, 127, 127, 0.04) 88.78%)`,
-              }}
-            >
-              {
-                posts.map((post) => (
-                  <div key={post.id}>{post.body}</div>
-                ))
-              }
-            </Tab.Panel>
-          ))}
+          {
+            categories.map((category) => (
+              <Tab.Panel
+                key={category.id}
+                className={classNames(
+                  'rounded-r-xl p-3 lg:h-screen',
+                )}
+                style={{
+                  background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.04) 10.8%, rgba(255, 127, 127, 0.04) 88.78%)`,
+                }}
+              >
+                {category.body}
+              </Tab.Panel>
+            ))
+          }
         </Tab.Panels>
         <div className='lg:hidden flex items-center justify-around flex-col sm:flex-row w-[16rem] mx-auto mt-10 mb-14'>
           <button className='btn btn-primary btn-outline normal-case w-full mb-5 sm:mb-0 sm:mr-2'>Account Management</button>
