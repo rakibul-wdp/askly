@@ -30,7 +30,7 @@ const AccountBody = () => {
       </div>
       <div className="divider md:divider-horizontal"></div>
       <div className='border border-white p-5 rounded-lg w-[80%] sm:w-[60%] md:w-[35%] mx-auto md:mx-0'>
-        <p className='text-end bg-primary text-white ml-[60%] px-5 py-2 rounded-2xl -mt-5 -mr-5'>Current plan</p>
+        <p className='text-end ml-[60%] px-5 py-2 rounded-2xl -mt-5 -mr-5 bg-gradient-to-b from-purple-600 to-red-600 text-white'>Current plan</p>
         <h2 className='text-3xl font-bold'>Starter</h2>
         <div className="divider"></div>
         <ul className="list-disc list-outside ml-8 font-medium">

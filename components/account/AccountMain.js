@@ -63,11 +63,11 @@ const AccountMain = () => {
             ))}
           </div>
           <div className='hidden lg:block'>
-            {changePassword[0] === "Account" && <Tab className="btn btn-primary btn-outline normal-case w-[12rem] ml-3 mb-2">
+            {changePassword[0] === "Account" && <Tab className="btn btn-primary btn-outline normal-case w-[12rem] lg:w-[10rem] xl:w-[12rem] ml-3 mb-2">
               Change Password
             </Tab>
             }
-            <Tab className="btn btn-primary btn-outline normal-case w-[12rem] ml-3 mb-2">
+            <Tab className="btn btn-primary btn-outline normal-case w-[12rem] lg:w-[10rem] xl:w-[12rem] ml-3 mb-2">
               Delete Account
             </Tab>
           </div>
@@ -91,9 +91,9 @@ const AccountMain = () => {
             </Tab.Panel>
           ))}
         </Tab.Panels>
-        <div className='lg:hidden flex items-center justify-around flex-col sm:flex-row w-[14rem] md:w-[14rem] mx-auto'>
-          <button className='btn btn-primary btn-outline normal-case w-full'>Change Password</button>
-          <button className='btn btn-primary btn-outline normal-case w-full'>Delete Account</button>
+        <div className='lg:hidden flex items-center justify-around flex-col sm:flex-row w-[16rem] mx-auto mt-10'>
+          <button className='btn btn-primary btn-outline normal-case w-full mb-5 sm:mb-0 sm:mr-2'>Change Password</button>
+          <button className='btn btn-primary btn-outline normal-case w-full sm:ml-2'>Delete Account</button>
         </div>
       </Tab.Group>
     </div>
