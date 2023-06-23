@@ -1,6 +1,7 @@
 import React from 'react';
 import RewardsImg from "../../public/assets/images/account/rewards.svg";
 import CopyImg from "../../public/assets/images/account/copy.svg";
+import MailIcon from "../../public/assets/icons/email.svg";
 import Image from 'next/image';
 
 const AccountReferFriend = () => {
@@ -15,7 +16,13 @@ const AccountReferFriend = () => {
         <Image src={CopyImg} width={20} height={20} alt='copy' />
       </div>
       <div className='flex items-center'>
-        <input type="email" placeholder="Email" className="input input-bordered input-primary w-full mr-2" style={{ background: "rgba(255, 127, 127, 0.02)" }} />
+        <div className='relative w-full border border-primary rounded-lg px-3 py-2.5 bg-[#ff7f7f05] z-0' >
+          <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10' style={{ backgroundColor: "#ff7f7f05" }}>Email</label>
+          <div className='flex items-center w-full'>
+            <Image src={MailIcon} width={20} height={20} alt='mail icons' />
+            <input type="email" placeholder='example@gmail.com' className='w-full outline-none bg-[#ff7f7f05] ml-2 text-primary' />
+          </div>
+        </div>
         <button className='btn btn-primary ml-2'>Invite</button>
       </div>
     </section>

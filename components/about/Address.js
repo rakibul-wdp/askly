@@ -38,8 +38,14 @@ const Address = () => {
           </div>
           <h4 className='text-xl font-bold my-3'>Want to talk to us?</h4>
           <form>
-            <input type="email" placeholder="Type here" className="input input-bordered input-primary w-full mb-5" style={{ background: "rgba(255, 127, 127, 0.02)" }} />
-            <textarea className="textarea textarea-bordered textarea-primary w-full" placeholder="Bio" style={{ background: "rgba(255, 127, 127, 0.02)" }}></textarea>
+            <div className='relative my-5 w-full border border-primary rounded-lg px-3 py-2.5 bg-[#ff7f7f05] z-0' >
+              <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10' style={{ backgroundColor: "#ff7f7f05" }}>Email</label>
+              <div className='flex items-center w-full'>
+                <Image src={EmailImg} width={20} height={20} alt='mail icons' />
+                <input type="email" placeholder='example@gmail.com' className='w-full outline-none bg-[#ff7f7f05] ml-2 text-primary' />
+              </div>
+            </div>
+            <textarea className="textarea textarea-bordered textarea-primary w-full" placeholder="Write your message here..." rows={4} style={{ background: "rgba(255, 127, 127, 0.02)" }}></textarea>
             <input className='btn btn-primary normal-case w-full mt-3 mb-5' type="submit" value="Send" />
           </form>
           <div className='flex items-center justify-between'>
