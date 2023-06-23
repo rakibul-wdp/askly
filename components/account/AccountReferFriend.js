@@ -17,7 +17,7 @@ const AccountReferFriend = () => {
       </div>
       <div className='flex items-center'>
         <div className='relative w-full border border-primary rounded-lg px-3 py-2.5 bg-[#ff7f7f05] z-0' >
-          <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10' style={{ backgroundColor: "#ff7f7f05" }}>Email</label>
+          <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10 bg-[#e9def3f0]'>Email</label>
           <div className='flex items-center w-full'>
             <Image src={MailIcon} width={20} height={20} alt='mail icons' />
             <input type="email" placeholder='example@gmail.com' className='w-full outline-none bg-[#ff7f7f05] ml-2 text-primary' />

@@ -10,7 +10,7 @@ const AccountBody = () => {
         <h4 className='mb-3 font-medium'>Account Details</h4>
 
         <div className='relative my-7 w-full border border-primary rounded-lg px-3 py-2.5 bg-[#ff7f7f05] z-0' >
-          <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10' style={{ backgroundColor: "#ff7f7f05" }}>User Name</label>
+          <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10 bg-[#e9def3f0]'>User Name</label>
           <div className='flex items-center w-full'>
             <Image src={UserIcon} width={20} height={20} alt='mail icons' />
             <input type="text" placeholder='rakibul-wdp' className='w-full outline-none bg-[#ff7f7f05] ml-2 text-primary' />
@@ -18,7 +18,7 @@ const AccountBody = () => {
         </div>
 
         <div className='relative mb-8 w-full border border-primary rounded-lg px-3 py-2.5 bg-[#ff7f7f05] z-0' >
-          <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10' style={{ backgroundColor: "#ff7f7f05" }}>Email</label>
+          <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10 bg-[#e9def3f0]'>Email</label>
           <div className='flex items-center w-full'>
             <Image src={MailIcon} width={20} height={20} alt='mail icons' />
             <input type="email" placeholder='example@gmail.com' className='w-full outline-none bg-[#ff7f7f05] ml-2 text-primary' />

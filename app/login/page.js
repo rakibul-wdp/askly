@@ -25,7 +25,7 @@ const Login = () => {
       }}>
         <h2 className='text-2xl font-bold mb-3'>Welcome back</h2>
         <div className='relative mt-7 w-full border border-primary rounded-lg px-3 py-2.5 bg-[#ff7f7f05] z-0' >
-          <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10' style={{ backgroundColor: "#ff7f7f05" }}>Email</label>
+          <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10 bg-[#e9def3f0]'>Email</label>
           <div className='flex items-center w-full'>
             <Image src={MailIcon} width={20} height={20} alt='mail icons' />
             <input type="email" placeholder='example@gmail.com' className='w-full outline-none bg-[#ff7f7f05] ml-2 text-primary' />
@@ -33,7 +33,7 @@ const Login = () => {
         </div>
 
         <div className='relative my-6 w-full border border-primary rounded-lg px-3 py-2.5 bg-[#ff7f7f05]' >
-          <label htmlFor="" className='absolute -top-3 left-2 z-10 px-1 text-primary'>Password</label>
+          <label htmlFor="" className='absolute -top-3 left-2 z-10 px-1 text-primary bg-[#e9def3f0]'>Password</label>
           <div className='flex items-center w-full'>
             <Image src={LockIcon} width={20} height={20} alt='lock icons' />
             <input type={showPassword ? "text" : "password"} placeholder='********' className='w-full outline-none bg-[#ff7f7f05] ml-2 text-primary' />
