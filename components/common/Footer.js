@@ -13,8 +13,8 @@ const Footer = ({ bg }) => {
         </div>
         <div className="flex flex-col lg:flex-row lg:items-center text-xl">
           <Link href="/about">About</Link>
-          <Link className='my-2 lg:my-0 lg:mx-5' href="#">Contact</Link>
-          <Link href="#">FAQ</Link>
+          <Link className='my-2 lg:my-0 lg:mx-5' href="/about#contact">Contact</Link>
+          <Link href="/help#faq">FAQ</Link>
           <Link className='my-2 lg:my-0 lg:mx-5' href="/privacypolicy">Privacy Policy</Link>
           <Link href="/termsofservice">Terms of Service</Link>
         </div>

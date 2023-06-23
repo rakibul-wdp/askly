@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const Address = () => {
   return (
-    <section className='py-8 md:py-14 px-3 sm:px-5 md:px-8 lg:px-14 xl:px-20 2xl:px-24' style={{
+    <section id='contact' className='py-8 md:py-14 px-3 sm:px-5 md:px-8 lg:px-14 xl:px-20 2xl:px-24' style={{
       background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.2) 10.8%, rgba(255, 127, 127, 0.2) 88.78%)`,
     }}>
       <div className='flex flex-col md:flex-row items-center justify-between md:gap-8 lg:gap-24 xl:gap-32 max-w-screen-2xl mx-auto'>

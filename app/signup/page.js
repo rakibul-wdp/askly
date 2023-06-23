@@ -97,7 +97,9 @@ const SignUp = () => {
           </div>
         </div>
 
-        <input className='btn btn-primary normal-case w-full mb-3' type="submit" value="Sign Up" />
+        <Link href="/account">
+          <input className='btn btn-primary normal-case w-full mb-3' type="submit" value="Sign Up" />
+        </Link>
         <p>Already have an account? <Link className='underline' href="/login">Login</Link></p>
       </form>
     </section>

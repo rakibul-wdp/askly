@@ -42,7 +42,9 @@ const Login = () => {
         </div>
 
         <p className='my-3.5 underline'>Forget your password?</p>
-        <input className='btn btn-primary normal-case w-full mb-3.5' type="submit" value="Login" />
+        <Link href="/account">
+          <input className='btn btn-primary normal-case w-full mb-3.5' type="submit" value="Login" />
+        </Link>
         <p>Don't have an account? <Link className='underline' href="/signup">Sign up</Link></p>
       </form>
     </section>
