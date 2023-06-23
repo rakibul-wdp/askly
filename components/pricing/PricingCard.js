@@ -12,10 +12,9 @@ const PricingCard = () => {
       <div className='pt-32 pb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-10 max-w-screen-2xl mx-auto'>
         {
           pricing.map((price) => (
-            <div className={`${price.id === 4 && "border border-primary"} p-5 rounded-lg`} style={{
-              background: `linear-gradient(0deg, #FDFDFD, #FDFDFD),
-            linear-gradient(0deg, rgba(253, 253, 253, 0.3), rgba(253, 253, 253, 0.3))
-            `}} key={price.id}>
+            <div className={`${price.id === 4 ? "border border-primary" : "border border-white"} p-5 rounded-lg`} style={{
+              background: price.id === 4 ? "#FDFDFD" : "linear-gradient(134.56deg, rgba(155, 126, 234, 0.05) 10.8%, rgba(255, 127, 127, 0.05) 88.78%)"
+            }} key={price.id}>
               <h2 className='text-3xl font-bold'>{price.pricingName}</h2>
               <div className="divider"></div>
               <ul className="list-disc list-outside ml-8 mb-32">
