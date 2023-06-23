@@ -3,31 +3,40 @@
 import React from 'react';
 import { Tab } from '@headlessui/react'
 import AsklyLogo from "../../public/assets/images/common/asklyLogo.png";
+import UserIcon from "../../public/assets/icons/User.svg";
+import DUserIcon from "../../public/assets/icons/DActive.svg";
+import SearchIcon from "../../public/assets/icons/Search.svg";
+import DSearchIcon from "../../public/assets/icons/DSearch.svg";
+import FileIcon from "../../public/assets/icons/File.svg";
+import DFileIcon from "../../public/assets/icons/DFile.svg";
 import DashboardLinkedAccounts from './DashboardLinkedAccounts';
 import DashboardDocumentHub from './DashboardDocumentHub';
 import DashboardAsk from './DashboardAsk';
 import Image from 'next/image';
 
-const categories = {
-  "Ask!": [
-    {
-      id: 1,
-      body: <DashboardAsk />
-    },
-  ],
-  "Document Hub": [
-    {
-      id: 1,
-      body: <DashboardDocumentHub />
-    },
-  ],
-  "Linked Accounts": [
-    {
-      id: 1,
-      body: <DashboardLinkedAccounts />
-    },
-  ],
-}
+const categories = [
+  {
+    id: 1,
+    navTitle: "Ask!",
+    activeIcon: SearchIcon,
+    icon: DSearchIcon,
+    body: <DashboardAsk />
+  },
+  {
+    id: 2,
+    navTitle: "Document Hub",
+    activeIcon: FileIcon,
+    icon: DFileIcon,
+    body: <DashboardDocumentHub />
+  },
+  {
+    id: 3,
+    navTitle: "Linked Accounts",
+    activeIcon: UserIcon,
+    icon: DUserIcon,
+    body: <DashboardLinkedAccounts />
+  },
+]
 
 const DashboardSideNav = () => {
 
