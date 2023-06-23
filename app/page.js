@@ -11,7 +11,7 @@ export default function Home() {
         <HomeHero />
       </div>
       <HomeMain />
-      <Footer />
+      <Footer bg={false} />
     </main>
   )
 }

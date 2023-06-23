@@ -3,9 +3,9 @@ import Link from 'next/link';
 import AsklyLogo from "../../public/assets/images/common/asklyLogo.png";
 import Image from 'next/image';
 
-const Footer = () => {
+const Footer = ({ bg }) => {
   return (
-    <footer className="pt-2 pb-10 bg-accent px-3 sm:px-5 md:px-8 lg:px-14 xl:px-20 2xl:px-24">
+    <footer className="pt-2 pb-10 px-3 sm:px-5 md:px-8 lg:px-14 xl:px-20 2xl:px-24" style={{ background: bg ? "linear-gradient(90deg, rgba(132, 33, 192, 0.10) 0%, rgba(132, 33, 192, 0.10) 100%)" : "#FDFDFD" }}>
       <div className='flex lg:items-center justify-between max-w-screen-2xl mx-auto'>
         <div className="flex flex-col xl:flex-row xl:items-center">
           <Image src={AsklyLogo} width={250} height={250} alt='askly logo' />

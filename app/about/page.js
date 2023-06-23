@@ -10,7 +10,7 @@ const About = () => {
       <AboutHero />
       <Team />
       <Address />
-      <Footer />
+      <Footer bg={true} />
     </div>
   )
 }

@@ -12,7 +12,7 @@ const Account = () => {
         <AccountNav />
         <AccountMain />
       </div>
-      <Footer />
+      <Footer bg={true} />
     </div>
   )
 }

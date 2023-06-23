@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
     }}>
       <Navbar />
       <PrivacyPolicyContent />
-      <Footer />
+      <Footer bg={true} />
     </div>
   )
 }

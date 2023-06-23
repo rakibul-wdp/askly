@@ -10,7 +10,7 @@ const TermsOfService = () => {
     }}>
       <Navbar />
       <TermsOfServiceContent />
-      <Footer />
+      <Footer bg={true} />
     </div>
   )
 }

@@ -6,7 +6,7 @@ const Pricing = () => {
   return (
     <div>
       <PricingCard />
-      <Footer />
+      <Footer bg={true} />
     </div>
   )
 }

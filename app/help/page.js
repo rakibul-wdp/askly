@@ -12,7 +12,7 @@ const Help = () => {
         <FAQ />
         <Contact />
       </div>
-      <Footer />
+      <Footer bg={true} />
     </div>
   )
 }
