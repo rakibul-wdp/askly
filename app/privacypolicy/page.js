@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
     <div style={{
       background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.2) 10.8%, rgba(255, 127, 127, 0.2) 88.78%)`,
     }}>
-      <Navbar />
+      <Navbar navText={false} />
       <PrivacyPolicyContent />
       <Footer bg={true} />
     </div>

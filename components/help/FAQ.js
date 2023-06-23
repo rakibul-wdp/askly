@@ -10,7 +10,7 @@ import { FAQHelp } from '@/mockData/FAQHelp';
 const FAQ = () => {
   return (
     <section className=''>
-      <Navbar />
+      <Navbar navText={false} />
       <div className='pt-32'>
         <h2 className='text-3xl md:text-4xl font-bold text-center'>Frequently Asked Questions</h2>
         <div className="w-full pt-12">

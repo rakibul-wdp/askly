@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <div className='relative'>
-        <Navbar />
+        <Navbar navText={false} />
         <HomeHero />
       </div>
       <HomeMain />

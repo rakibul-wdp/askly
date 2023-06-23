@@ -5,7 +5,7 @@ import Navbar from '../common/Navbar';
 const AboutHero = () => {
   return (
     <section>
-      <Navbar />
+      <Navbar navText={true} />
       <div className="hero min-h-screen" style={{ backgroundImage: `url(${AboutHeroImg.src})` }}>
         <div className="hero-overlay bg-opacity-20"></div>
         <div className="hero-content text-center text-neutral-content">

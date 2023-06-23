@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import AsklyLogo from "../../public/assets/images/common/asklyLogo.png";
@@ -29,7 +29,7 @@ const NavLink = [
   },
 ]
 
-const Navbar = () => {
+const Navbar = ({ navText }) => {
   const pathname = usePathname();
 
   return (
@@ -42,10 +42,10 @@ const Navbar = () => {
       <div className="navbar-end w-full">
         <div className="hidden md:flex">
           <ul className="menu menu-horizontal px-1 text-xl font-medium">
-            <li className='md:w-[15%] lg:w-fit md:mx-auto'><Link href="/" className={`${pathname == "/" ? "text-primary" : "text-[#171717]"}`}>Home</Link></li>
-            <li className='md:w-[18%] lg:w-fit md:mx-auto'><Link href="/pricing" className={`${pathname == "/pricing" ? "text-primary" : "text-[#171717]"}`}>Pricing</Link></li>
-            <li className='md:w-[10%] lg:w-fit md:mx-auto'><Link href="/help" className={`${pathname == "/help" ? "text-primary" : "text-[#171717]"}`}>Help</Link></li>
-            <li className='md:w-[24%] lg:w-fit md:mx-auto'><Link href="/about" className={`${pathname == "/about" ? "text-primary" : "text-[#171717]"}`}>About</Link></li>
+            <li className='md:w-[15%] lg:w-fit md:mx-auto'><Link href="/" className={`${pathname == "/" ? "text-primary" : (navText ? "text-white" : "text-[#171717]")}`}>Home</Link></li>
+            <li className='md:w-[18%] lg:w-fit md:mx-auto'><Link href="/pricing" className={`${pathname == "/pricing" ? "text-primary" : (navText ? "text-white" : "text-[#171717]")}`}>Pricing</Link></li>
+            <li className='md:w-[10%] lg:w-fit md:mx-auto'><Link href="/help" className={`${pathname == "/help" ? "text-primary" : (navText ? "text-white" : "text-[#171717]")}`}>Help</Link></li>
+            <li className='md:w-[24%] lg:w-fit md:mx-auto'><Link href="/about" className={`${pathname == "/about" ? "text-primary" : (navText ? "text-white" : "text-[#171717]")}`}>About</Link></li>
           </ul>
         </div>
         <Link href="/signup"><PrimaryButton >Sign Up</PrimaryButton></Link>
