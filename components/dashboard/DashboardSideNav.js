@@ -47,14 +47,14 @@ const DashboardSideNav = () => {
   }
 
   return (
-    <div className="w-full sm:px-0">
+    <div className="w-full h-screen sm:px-0">
       <div className='lg:hidden py-8' style={{ background: "rgba(132, 33, 192, 0.10)" }}>
         <Link href="/">
           <Image src={AsklyLogo} width={250} height={250} alt='askly logo' />
         </Link>
       </div>
       <Tab.Group as="div" className="flex flex-col lg:flex-row justify-between">
-        <Tab.List className="flex flex-col justify-between w-full lg:w-[18%] lg:h-screen space-x-1 bg-[#FCEDF0] p-1 px-10 lg:px-3 xl:px-5 2xl:px-10">
+        <Tab.List className="flex flex-col justify-between w-full lg:w-[18%] space-x-1 bg-[#FCEDF0] p-1 px-10 lg:px-3 xl:px-5 2xl:px-10">
           <div className='flex lg:flex-col px-4 sm:px-14 md:px-32 lg:px-0'>
             <Link href="/">
               <Image className='lg:my-10 hidden lg:block' src={AsklyLogo} width={250} height={250} alt='askly logo' />
