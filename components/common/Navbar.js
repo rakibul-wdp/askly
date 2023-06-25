@@ -27,6 +27,10 @@ const NavLink = [
     name: 'About',
     href: '/about',
   },
+  {
+    name: <PrimaryButton >Sign Up</PrimaryButton>,
+    href: '/signup',
+  },
 ]
 
 const Navbar = ({ navText }) => {
@@ -48,7 +52,7 @@ const Navbar = ({ navText }) => {
             <li className='md:w-[24%] lg:w-fit md:mx-auto'><Link href="/about" className={`${pathname == "/about" ? "text-primary" : (navText ? "text-white" : "text-[#171717]")}`}>About</Link></li>
           </ul>
         </div>
-        <Link href="/signup"><PrimaryButton >Sign Up</PrimaryButton></Link>
+        <Link className='hidden md:block' href="/signup"><PrimaryButton >Sign Up</PrimaryButton></Link>
 
         <div className="px-4 md:hidden">
           <Popover className="relative">
@@ -72,7 +76,7 @@ const Navbar = ({ navText }) => {
                   leaveFrom="opacity-100 translate-y-0"
                   leaveTo="opacity-0 translate-y-1"
                 >
-                  <Popover.Panel className="absolute -left-32 z-10 mt-3 w-60 -translate-x-1/2 transform sm:px-0">
+                  <Popover.Panel className="absolute -left-28 z-10 mt-3 w-60 -translate-x-1/2 transform sm:px-0">
                     <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                       <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
                         {NavLink.map((item) => (
