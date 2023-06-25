@@ -6,10 +6,10 @@ import Image from 'next/image';
 const DashboardDocumentHub = () => {
   return (
     <section>
-      <div className='text-center md:text-end my-14 md:mr-10'>
-        <button className='btn btn-outline normal-case w-[10rem] md:btn-wide border-dashed'>Drag your files here</button>
-        <button className='btn btn-primary normal-case w-[10rem] md:btn-wide mx-3'>Upload</button>
-        <button className='btn normal-case bg-base-100 px-10'>Delete</button>
+      <div className='flex flex-wrap justify-center md:justify-end gap-3 my-14 md:mr-10'>
+        <button className='btn btn-outline normal-case btn-wide border-dashed'>Drag your files here</button>
+        <button className='btn btn-primary normal-case btn-wide'>Upload</button>
+        <button className='btn normal-case bg-base-100 w-full md:w-auto max-w-[16rem] px-10'>Delete</button>
       </div>
       <h4 className='text-xl text-primary font-medium mb-14 px-3 sm:px-5 md:px-8'>My Documents</h4>
       <div className='text-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-5 md:gap-10 px-3 sm:px-5 md:px-8'>

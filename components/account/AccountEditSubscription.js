@@ -6,7 +6,9 @@ const AccountEditSubscription = () => {
   return (
     <section className='flex flex-col md:flex-row justify-between p-5'>
       <div className='border border-white p-5 rounded-lg w-[80%] sm:w-[60%] md:w-[35%] mx-auto md:mx-0'>
-        <p className='text-end text-white ml-[60%] px-5 py-2 rounded-2xl -mt-5 -mr-5 bg-gradient-to-b from-purple-600 to-red-600'>Current plan</p>
+        <div className='flex items-center justify-end -mt-[2px] -mr-[2px]'>
+          <p className='text-center px-5 py-2 rounded-2xl -mt-5 -mr-5 bg-gradient-to-b from-purple-600 to-red-600 text-white'>Current plan</p>
+        </div>
         <h2 className='text-3xl font-bold'>Starter</h2>
         <div className="divider"></div>
         <ul className="list-disc list-outside ml-8 font-medium">
@@ -19,7 +21,7 @@ const AccountEditSubscription = () => {
           <li>Automated Updated Features</li>
           <li>24/7 Life time Support</li>
         </ul>
-        <button className='mt-32 btn mx-auto flex items-center'>Cancel</button>
+        <button className='mt-32 mb-5 text-primary mx-auto flex items-center'>Cancel</button>
       </div>
       <Image className='mx-auto my-10 md:my-0 rotate-90 md:-rotate-0' src={BigArrowImg} width={50} height={50} alt='starter to advance arrow' />
       <div className='border border-white p-5 rounded-lg w-[80%] sm:w-[60%] md:w-[35%] mx-auto md:mx-0'>

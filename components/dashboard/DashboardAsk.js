@@ -17,9 +17,9 @@ const DashboardAsk = () => {
   return (
     <>
       {!session ? <section>
-        <div className='text-center md:text-end my-14 md:mr-10'>
-          <button onClick={() => setSession(true)} className='btn btn-primary normal-case btn-outline w-[10rem] md:btn-wide'>Saved Session</button>
-          <button onClick={openModal} className='btn btn-primary normal-case w-[10rem] md:btn-wide ml-5'>Select Files</button>
+        <div className='flex flex-wrap justify-center md:justify-end gap-5 my-14 md:mr-10'>
+          <button onClick={() => setSession(true)} className='btn btn-primary normal-case btn-outline btn-wide'>Saved Session</button>
+          <button onClick={openModal} className='btn btn-primary normal-case btn-wide'>Select Files</button>
         </div>
         <h3 className='text-3xl font-medium text-center mb-5 px-3 sm:px-5 md:px-8'>Select Files to Start a Session</h3>
         <div className='text-center'>

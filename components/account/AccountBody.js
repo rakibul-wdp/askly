@@ -45,7 +45,7 @@ const AccountBody = () => {
           <li>Automated Updated Features</li>
           <li>24/7 Life time Support</li>
         </ul>
-        <button className='mt-32 btn mx-auto flex items-center'>Cancel</button>
+        <button className='mt-32 mb-5 text-primary mx-auto flex items-center'>Cancel</button>
       </div>
     </section>
   )
