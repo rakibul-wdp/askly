@@ -5,11 +5,11 @@ import SecondaryButton from '../common/SecondaryButton';
 
 const PricingCard = () => {
   return (
-    <section className='xl:h-[90vh] px-3 sm:px-5 md:px-8 lg:px-14 xl:px-20 2xl:px-24' style={{
+    <section className='px-3 sm:px-5 md:px-8 lg:px-14 xl:px-20 2xl:px-24' style={{
       background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.2) 10.8%, rgba(255, 127, 127, 0.2) 88.78%)`,
     }}>
       <Navbar navText={false} />
-      <div className='pt-32 pb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-10 max-w-screen-2xl mx-auto'>
+      <div className='pt-32 pb-40 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-10 max-w-screen-2xl mx-auto'>
         {
           pricing.map((price) => (
             <div className={`${price.id === 4 ? "border border-primary" : "border border-white"} p-5 rounded-lg`} style={{
