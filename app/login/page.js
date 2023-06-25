@@ -20,23 +20,21 @@ const Login = () => {
       background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.2) 10.8%, rgba(255, 127, 127, 0.2) 88.78%)`,
     }}>
       <Navbar navText={false} />
-      <form onSubmit={handleLoginSubmit} className='absolute bottom-1/2 right-1/2 transform translate-x-1/2 translate-y-1/2 bg-accent p-5 rounded-lg w-[90%] sm:w-[70%] md:w-[50%] lg:w-[45%] xl:w-[40%] 2xl:w-[30%]' style={{
-        background: `linear-gradient(134.56deg, rgba(155, 126, 234, 0.1) 10.8%, rgba(255, 127, 127, 0.1) 88.78%)`,
-      }}>
+      <form onSubmit={handleLoginSubmit} className='absolute bottom-1/2 right-1/2 transform translate-x-1/2 translate-y-1/2 bg-accent p-5 rounded-lg w-[90%] sm:w-[70%] md:w-[50%] lg:w-[45%] xl:w-[40%] 2xl:w-[30%] bg-[#ffffff66]'>
         <h2 className='text-2xl font-bold mb-3'>Welcome back</h2>
-        <div className='relative mt-7 w-full border border-primary rounded-lg px-3 py-2.5 bg-[#ff7f7f05] z-0' >
-          <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10 bg-[#e9def3f0]'>Email</label>
+        <div className='relative mt-7 w-full border border-primary rounded-lg px-3 py-2.5 bg-[#ffffff66] z-0' >
+          <label htmlFor="" className='absolute -top-2.5 left-2 px-1 text-primary z-10 bg-[#f9f1f6]'>Email</label>
           <div className='flex items-center w-full'>
             <Image src={MailIcon} width={20} height={20} alt='mail icons' />
-            <input type="email" placeholder='example@gmail.com' className='w-full outline-none bg-[#ff7f7f05] ml-2 text-primary' />
+            <input type="email" placeholder='example@gmail.com' className='w-full outline-none bg-[#ffffff66] ml-2 text-primary' />
           </div>
         </div>
 
-        <div className='relative my-6 w-full border border-primary rounded-lg px-3 py-2.5 bg-[#ff7f7f05]' >
-          <label htmlFor="" className='absolute -top-3 left-2 z-10 px-1 text-primary bg-[#e9def3f0]'>Password</label>
+        <div className='relative my-6 w-full border border-primary rounded-lg px-3 py-2.5 bg-[#ffffff66]' >
+          <label htmlFor="" className='absolute -top-3 left-2 z-10 px-1 text-primary bg-[#f9f1f6]'>Password</label>
           <div className='flex items-center w-full'>
             <Image src={LockIcon} width={20} height={20} alt='lock icons' />
-            <input type={showPassword ? "text" : "password"} placeholder='********' className='w-full outline-none bg-[#ff7f7f05] ml-2 text-primary' />
+            <input type={showPassword ? "text" : "password"} placeholder='********' className='w-full outline-none bg-[#ffffff66] ml-2 text-primary' />
             <Image onClick={() => setShowPassword(!showPassword)} className='cursor-pointer' src={EyeIcon} width={20} height={20} alt='eye icons' />
           </div>
         </div>
@@ -52,3 +50,5 @@ const Login = () => {
 }
 
 export default Login;
+
+// background: rgba(255, 255, 255, 0.40);
