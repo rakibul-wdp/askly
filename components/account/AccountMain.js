@@ -48,14 +48,14 @@ const AccountMain = () => {
     <div className="w-full pt-10 pb-8">
       <Tab.Group as="div" className="flex lg:flex-row flex-col justify-between">
         <Tab.List className="flex flex-col justify-between w-full lg:w-[18%] lg:h-[72vh] space-x-1 rounded-l-xl bg-[#FCEDF0] p-1 lg:pt-5">
-          <div className='flex lg:flex-col px-4 sm:px-14 md:px-32 lg:px-0'>
+          <div className='flex flex-wrap justify-between lg:flex-col px-4 sm:px-14 md:px-32 lg:px-0'>
             {
               categories.map((category) => (
                 <Tab
                   key={category.id}
                   className={({ selected }) =>
                     classNames(
-                      'w-full py-2.5 lg:pl-4 font-medium leading-5',
+                      'w-auto py-2.5 lg:pl-4 font-medium leading-5',
                       'lg:text-start',
                       selected
                         ? `${setActive(category.navTitle)} text-primary`

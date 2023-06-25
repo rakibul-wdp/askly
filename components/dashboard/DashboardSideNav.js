@@ -59,27 +59,29 @@ const DashboardSideNav = () => {
             <Link href="/">
               <Image className='lg:my-10 hidden lg:block' src={AsklyLogo} width={250} height={250} alt='askly logo' />
             </Link>
-            {
-              categories.map((category) => (
-                <Tab
-                  key={category.id}
-                  className={({ selected }) =>
-                    classNames(
-                      'w-full py-2.5 font-medium leading-5',
-                      'lg:text-start',
-                      selected
-                        ? `${setActive(category.navTitle)} text-primary`
-                        : 'hover:text-primary'
-                    )
-                  }
-                >
-                  <div className='flex items-center justify-start gap-1'>
-                    {<Image src={active === category.navTitle ? category.activeIcon : category.icon} width={20} height={20} alt='icon' />}
-                    {category.navTitle}
-                  </div>
-                </Tab>
-              ))
-            }
+            <div className='w-full flex flex-wrap justify-between items-center lg:flex-col lg:justify-center lg:items-start'>
+              {
+                categories.map((category) => (
+                  <Tab
+                    key={category.id}
+                    className={({ selected }) =>
+                      classNames(
+                        'w-auto py-2.5 font-medium leading-5',
+                        'lg:text-start',
+                        selected
+                          ? `${setActive(category.navTitle)} text-primary`
+                          : 'hover:text-primary'
+                      )
+                    }
+                  >
+                    <div className='flex items-center justify-start gap-1'>
+                      {<Image src={active === category.navTitle ? category.activeIcon : category.icon} width={20} height={20} alt='icon' />}
+                      {category.navTitle}
+                    </div>
+                  </Tab>
+                ))
+              }
+            </div>
           </div>
           <div className='hidden lg:block -ml-20'>
             <Tab className="btn btn-primary btn-outline normal-case w-[12rem] lg:w-[10rem] xl:w-[12rem] 2xl:ml-3 mb-2">Account management</Tab>
