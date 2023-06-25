@@ -17,12 +17,12 @@ const FAQ = () => {
           <div className="mx-auto w-full rounded-2xl py-2">
             {
               FAQHelp.map((faq) => (
-                <Disclosure as={`${faq.id !== 1 && "div"}`} className={`${faq.id !== 1 && "mt-2"}`} key={faq.id}>
+                <Disclosure defaultOpen={faq.id === 1} as="div" className={`${faq.id !== 1 && "mt-2"} ${faq.id === 1 ? "border-y" : "border-b"} border-gray-300`} key={faq.id}>
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg bg-purple-100 px-4 py-3 text-lg text-left font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-lg text-left font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                         <span>{faq.question}</span>
-                        <Image className={`${open && 'rotate-180 transform'}`} src={ArrowIcon} width={5} height={5} alt='arrow icon' />
+                        <Image className={`${open && 'rotate-180 transform'}`} src={ArrowIcon} width={10} height={10} alt='arrow icon' />
                       </Disclosure.Button>
                       <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">{faq.answer}</Disclosure.Panel>
                     </>
